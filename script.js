@@ -73,7 +73,7 @@ function editTask(button) {
         button.textContent = '💾';
     } else {
         input.readOnly = true;
-        button.textContent = '✏️';
+        button.textContent = '🖋️';
         saveTodos();
     }
 }
