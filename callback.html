@@ -1,0 +1,51 @@
+Dama Amisuda
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Function to load the YouTube playlist
+        function loadPlaylist() {
+            const playlistId = getQueryParam('playlistId');
+            const iframe = document.getElementById('playlist-iframe');
+
+            if (playlistId) {
+                iframe.src = `https://www.youtube.com/embed/videoseries?list=${playlistId}`;
+            } else {
+                alert("No playlist ID found.");
+            }
+        }
+
+        // Function to open the playlist link in a new tab
+        function openPlaylistInNewTab() {
+            const playlistId = getQueryParam('playlistId');
+            if (playlistId) {
+                const url = `https://www.youtube.com/playlist?list=${playlistId}`;
+                window.open(url, '_blank');
+            } else {
+                alert("No playlist ID found.");
+            }
+        }
+
+        // Function to go back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+
+        // Load the playlist when the page is loaded
+        window.onload = loadPlaylist;
+    </script>
+</body>
+</html>
+23106050096
