@@ -1,0 +1,134 @@
+body {
+    font-family: 'Courier New'; /* Changed font for a more modern look */
+    margin: 20px;
+    padding: 0;
+    background-color: #00dffd; /* Lighter background color */
+}
+body {
+
+    background-image: url('data:image/jpeg;base64,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');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full height of the viewport */
+}
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px; /* Slightly larger border radius */
+    box-shadow: 0 4px 20px rgba(129, 0, 0, 0.411);
+    padding: 30px; /* Increased padding for a more spacious feel */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.6em; /* Larger heading for emphasis */
+    font-family: 'Courier New';
+}
+::placeholder {
+    font-family: 'Courier New';
+}
+button { 
+    font-family: 'Courier New';
+}
+
+.timer {
+    font-size: 60px; /* Increased font size for the timer */
+    margin: 20px 0;
+    color: #0400ff; /* Fun color for the timer */
+    font-family: 'OCR A Extended';
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 12px 25px; /* Increased padding for buttons */
+    font-size: 18px; /* Larger font size for buttons */
+    cursor: pointer;
+    background-color: #6ab04c; /* Fun button color */
+    color: white;
+    border: none;
+    border-radius: 30px; /* More rounded buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Added transform for hover effect */
+}
+
+.buttons button:hover {
+    background-color: #105f00; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.to-do input {
+    padding: 12px;
+    width: 75%;
+    font-size: 16px;
+    font-family: 'Courier New';
+    border: 2px solid #ccc; /* Thicker border for input */
+    border-radius: 30px; /* More rounded corners */
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+.to-do input:focus {
+    border-color: #6ab04c; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.to-do button {
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff9f43; /* Fun color for To-Do buttons */
+    color: white;
+    border: none;
+    border-radius: 30px; /* More rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Added transform for hover effect */
+}
+
+.to-do button:hover {
+    background-color: #e67e22; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px; /* Increased padding for list items */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.247);
+}
+
+ul li input {
+    width: 70%;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    font-family: 'Courier New';
+}
+
+ul li input[readonly] {
+    color: #2b2b2b;
+    cursor: default;
+}
+
+ul li button {
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #7cff77; /* Fun color for action buttons */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px; /* More rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Added transform for hover effect */
+}
+
+ul li button:hover {
+    background-color: #f5331d; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
