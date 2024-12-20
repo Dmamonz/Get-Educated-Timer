@@ -1,0 +1,56 @@
+Dama Amisuda
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Educated Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Go Educate Timer</h1>
+        <div class="settings">
+            <label>Study Time (min): <input type="number" id="study-time" value="25" min="1"></label>
+            <label>Break Time (min): <input type="number" id="break-time" value="5" min="1"></label>
+        </div>
+        <div class="timer" id="timer">25:00</div>
+        <div class="buttons">
+            <button onclick="startPomodoro()">Start</button>
+            <button onclick="pausePomodoro()">Pause</button>
+            <button onclick="resetPomodoro()">Reset</button>
+        </div>
+
+        <h1 class="to-do">Your Task</h1>
+        <div>
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button onclick="addTodo()">Add</button>
+        </div>
+        <ul id="todo-list"></ul>
+
+        <h1>Youtube PlayList</h1>
+        <div id="youtube">
+            <input type="text" id="youtube-url" placeholder="Enter YouTube Playlist URL">
+            <button onclick="openPlaylistInNewTab()">Open Playlist</button>
+            <p id="youtube-status"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function openPlaylistInNewTab() {
+            const url = document.getElementById('youtube-url').value;
+            const youtubeStatus = document.getElementById('youtube-status');
+        
+            if (url) {
+                // Open the URL in a new tab
+                window.open(url, '_blank');
+                youtubeStatus.textContent = 'Playlist opened in a new tab!';
+            } else {
+                youtubeStatus.textContent = 'Please enter a valid YouTube URL.';
+            }
+        }
+    </script>
+</body>
+</html>
+23106050096
